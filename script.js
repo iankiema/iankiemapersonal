@@ -41,3 +41,18 @@ function scrollActive(){
     }
   })
 }
+
+  function sendEmail(){
+        
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "kiemaian.ik@gmail.com",
+            Password : "C0260BEE1BCC3D2C91A9FC86B6153BCBACDB",
+            To : 'kiemaian.ik@gmail.com',
+            From : "kiemaian.ik@gmail.com",
+            Subject : "New contact from personal website",
+            Body : "Name:" + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Project: " + document.getElementById("continent").value + "<br> Message:" + document.getElementById("message").value
+        }).then(
+        message => alert("Your message has been sent!")
+        );
+        }
