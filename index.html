@@ -334,7 +334,7 @@
       <h2 class="section_title">Get In Touch</h2>
 
       <div class="contact_container bd-grid">
-        <form action="https://formsubmit.co/el/vejefo" method="POST" id="contact_form">
+        <form onsubmit="sendEmail(); reset(); return false;" method="POST" id="contact_form">
           <div class="contact_inputs">
             <input id="name" type="text" placeholder="Name" class="contact_input" required>
             <input id="email" type="email" placeholder="Email" class="contact_input" required>
