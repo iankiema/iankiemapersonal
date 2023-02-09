@@ -189,7 +189,7 @@ img{
 }
 
 .nav_link:hover,
-.nav_link:active{
+.nav_link.active{
   color: var(--text-color);
 }
 
