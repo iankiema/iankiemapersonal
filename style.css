@@ -185,9 +185,11 @@ img{
   color: var(--first-color-lighten);
   font-weight: var(--font-bold);
   transition: .3s;
+  text-decoration: none;
 }
 
-.nav_link:hover{
+.nav_link:hover,
+.nav_link:active{
   color: var(--text-color);
 }
 

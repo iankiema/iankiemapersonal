@@ -56,3 +56,18 @@ function scrollActive(){
         message => alert("Your message has been sent!")
         );
         }
+
+const activeLinks = document.querySelectorAll(".nav_link");
+
+activeLinks.forEach((activeLink) => {
+  removeActive()
+  activeLink.addEventListener("click",(event) =>{
+    event.target.classList.add("active");
+  });
+});
+
+function removeActive(){
+  activeLinks.forEach((activeLink) =>{
+    activeLink.classList.remove("active")
+  })
+}
