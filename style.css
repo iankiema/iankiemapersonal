@@ -597,6 +597,8 @@ img{
   color: var(--first-color);
   padding: .25rem;
   margin-bottom: var(--mb-2);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .works_title{
@@ -609,7 +611,13 @@ img{
 }
 
 .fa-link {
-  border-radius: 30px;
+  padding: 20px;
+  border: none;
+}
+
+.fa-link:hover {
+  background-color: var(--first-color);
+  color: var(--first-color-lighten);
 }
 
 
