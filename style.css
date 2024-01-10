@@ -560,21 +560,32 @@ img{
 /*-----Works---*/
 .works_section{
   padding-top: 2.5rem;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 .works_container{
+  width: 100%;
+  display: flex;
+  height: auto;
+  margin: auto;
   justify-content: center;
-  row-gap: 2rem;
-}
+  }
 
-.works_img{
-  position: relative;
-  overflow: hidden;
-  border-radius: .5rem;
+.card {
+  width: 80%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+} 
 
-}
+ .card-body {
+  width: 100%;
+  flex: 1; /* Allow the card body to expand to fill the available space */
+  justify-content: space-between;
+  text-align: left;
+} 
 
 .works_data{
   position: absolute;
@@ -592,13 +603,14 @@ img{
 
 .works_link{
   display: inline-flex;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: var(--first-color-lighten);
   color: var(--first-color);
   padding: .25rem;
   margin-bottom: var(--mb-2);
   text-decoration: none;
   transition: 0.3s;
+  margin-right: 30px;
 }
 
 .works_title{
@@ -827,6 +839,12 @@ img{
 
   .services_container,.works_container{
     grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about_section {
+    padding-top: 50px;
   }
 }
 

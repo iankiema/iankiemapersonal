@@ -71,3 +71,77 @@ function removeActive(){
     activeLink.classList.remove("active")
   })
 }
+
+//-----Work Section-----
+
+const worksData = [
+  {
+    imgSrc: "images/Harmony fest.jpg",
+    link: "https://iankiema.github.io/Harmony-Fest/",
+    title: "Harmony Fest Website",
+    code: "https://github.com/iankiema/Harmony-Fest",
+    description: "Harmony Fest is an exciting and innovative online platform that celebrates the beauty of music and brings together music enthusiasts from all around the world.This website was built with HTML, CSS and Javascript."
+  },
+  {
+    imgSrc: "images/work3.jpg",
+    link: "https://iankiema.github.io/Mbari-ya-Nderi-Weather-App/",
+    title: "Weather App",
+    code: "https://github.com/iankiema/Mbari-ya-Nderi-Weather-App",
+    description: "'Mbari-ya-Nderi' meaning the Family of Nderi is an app I made to help my family and other users to know the exact weather condition in their regions. It was made with HTML,CSS and Javascript."
+  },
+  {
+    imgSrc: "images/Awesome books.jpg",
+    link: "https://awesomebookstores.netlify.app/",
+    title: "Awesome Books",
+    code: "https://github.com/iankiema/Bookstore-Capstone",
+    description: "Awesome Bookstore React website is an application used to add,display and delete books."
+  },
+  {
+    imgSrc: "images/space travelers hub.jpg",
+    link: "https://space-mission-website.netlify.app/",
+    title: "Space Travelers Hub",
+    code: "https://github.com/iankiema/Space-X-Website",
+    description: "This is a commercial website for a company called Space X. This website enables users to reserve rockets and book missions for going to space."
+  },
+  {
+    imgSrc: "images/Country details.jpg",
+    link: "https://dev--country-details-website.netlify.app/",
+    title: "Country Details App",
+    code: "https://github.com/iankiema/Country-Info-webapp",
+    description: "Country Info Webapp is an application that allows users to access the details of various countries that have been populated on the homepage."
+  },
+  {
+    imgSrc: "images/Math magician.jpg",
+    link: "https://math-magician-calc.netlify.app",
+    title: "Math Magician App",
+    code: "https://github.com/iankiema/Math-Magicians",
+    description: "Math Magicians Math Magicians website is an application used to display a single page application that contains home section,a calculator section and a quote section."
+  },
+];
+
+function createWorkElement(work) {
+  return `
+      <div class="works_img card shadow col-md-3 mb-4">
+     
+          <h5 class="card-title">${work.title}</h5>
+          <img src="${work.imgSrc}" class="card-img-top" alt="">
+          <div class="card-body">
+            <p>
+              ${work.description}
+            </p>
+            <a href="${work.link}" class="works_link" target="_blank"></i>Demo</a>
+            <a href="${work.code}" class="works_link" target="_blank"></i>Code</a>
+          </div>
+      
+      </div>
+  `;
+}
+
+function appendWorksToContainer(containerId, works) {
+  const container = document.getElementById(containerId);
+  works.forEach((work) => {
+    container.innerHTML += createWorkElement(work)
+  })
+}
+
+appendWorksToContainer("works_container", worksData)
