@@ -76,6 +76,13 @@ function removeActive(){
 
 const worksData = [
   {
+    imgSrc: "images/budget app.jpg",
+    link: "https://cizzla.onrender.com/",
+    title: "Budget Track Website",
+    code: "https://github.com/iankiema/Budget-App",
+    description: "The Budget App is centered around the creation of a mobile web application designed for budget management. In this application, users can efficiently oversee their financial transactions by categorizing them. By doing so, they can gain insight into their spending patterns, allowing them to track their expenses."
+  },
+  {
     imgSrc: "images/Harmony fest.jpg",
     link: "https://iankiema.github.io/Harmony-Fest/",
     title: "Harmony Fest Website",
