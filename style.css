@@ -578,7 +578,12 @@ img{
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  cursor: pointer;
 } 
+
+.card:hover {
+  transform: scale(1.02);
+}
 
  .card-body {
   width: 100%;

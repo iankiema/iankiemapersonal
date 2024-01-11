@@ -83,6 +83,13 @@ const worksData = [
     description: "The Budget App is centered around the creation of a mobile web application designed for budget management. In this application, users can efficiently oversee their financial transactions by categorizing them. By doing so, they can gain insight into their spending patterns, allowing them to track their expenses."
   },
   {
+    imgSrc: "images/online bookstore.jpg",
+    link: "https://online-bookstore-module.netlify.app/",
+    title: "Online Bookstore",
+    code: "https://github.com/iankiema/Bookstore-Capstone",
+    description: "Bookstore website is an application used to provide the user with online books that they can access,comment and like."
+  },
+  {
     imgSrc: "images/Harmony fest.jpg",
     link: "https://iankiema.github.io/Harmony-Fest/",
     title: "Harmony Fest Website",
@@ -128,7 +135,7 @@ const worksData = [
 
 function createWorkElement(work) {
   return `
-      <div class="works_img card shadow col-md-3 mb-4">
+      <div class="works_img card shadow  col-md-3 mb-4">
      
           <h5 class="card-title">${work.title}</h5>
           <img src="${work.imgSrc}" class="card-img-top" alt="">
